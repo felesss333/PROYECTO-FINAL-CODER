@@ -1,0 +1,362 @@
+[
+  {
+      "id": "Pro_LOL_Edition",
+      "nombre": "Pro LOL Edition",
+      "marca": "Logitech G",
+      "precio": "112004.15",
+      "peso": "93",
+      "sensibilidad": "25",
+      "imagen": "assets/img/logitechg/logitech_g_pro_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Pro_X_Superlight",
+      "nombre": "Pro X Superlight",
+      "marca": "Logitech G",
+      "precio": "217509.55",
+      "peso": "80",
+      "sensibilidad": "25",
+      "imagen": "assets/img/logitechg/logitech_g_pro_x_superlight_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "G303_Shroud_Edition",
+      "nombre": "G303 Shroud Edition",
+      "marca": "Logitech G",
+      "precio": "76450.38",
+      "peso": "75",
+      "sensibilidad": "16",
+      "imagen": "assets/img/logitechg/logitech_g303_shroud_edition_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "G703_LightSpeed",
+      "nombre": "G703 LightSpeed",
+      "marca": "Logitech G",
+      "precio": "138171.39",
+      "peso": "95",
+      "sensibilidad": "25",
+      "imagen": "assets/img/logitechg/logitech_g703_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "G502_X_Plus_Gaming",
+      "nombre": "G502 X Plus Gaming",
+      "marca": "Logitech G",
+      "precio": "184789.50",
+      "peso": "106",
+      "sensibilidad": "25",
+      "imagen": "assets/img/logitechg/logitech_g502_x_plus_gaming_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "G502_LightSpeed",
+      "nombre": "G502 LightSpeed",
+      "marca": "Logitech G",
+      "precio": "125269.33",
+      "peso": "200",
+      "sensibilidad": "16",
+      "imagen": "assets/img/logitechg/logitech_g502_1.jpg",
+      "conexion": "Ambos"
+},
+  {
+      "id": "EC1_CW",
+      "nombre": "EC1-CW",
+      "marca": "Zowie",
+      "precio": "63599.90",
+      "peso": "79",
+      "sensibilidad": "3.2",
+      "imagen": "assets/img/benqzowie/benq_zowie_ec1cw_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "EC1_C",
+      "nombre": "EC1-C",
+      "marca": "Zowie",
+      "precio": "57760.30",
+      "peso": "80",
+      "sensibilidad": "3.2",
+      "imagen": "assets/img/benqzowie/benq_zowie_ec1a_1.jpg",
+      "conexion": "Cable"
+},
+  {
+      "id": "EC2_CW",
+      "nombre": "EC2-CW",
+      "marca": "Zowie",
+      "precio": "90762.33",
+      "peso": "77",
+      "sensibilidad": "3.2",
+      "imagen": "assets/img/benqzowie/benq_zowie_ec2cw_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "EC2_C",
+      "nombre": "EC2-C",
+      "marca": "Zowie",
+      "precio": "88830.00",
+      "peso": "73",
+      "sensibilidad": "3.2",
+      "imagen": "assets/img/benqzowie/benq_zowie_ec2b_1.jpg",
+      "conexion": "Cable"
+},
+  {
+      "id": "EC3_CW",
+      "nombre": "EC3-CW",
+      "marca": "Zowie",
+      "precio": "118299.85",
+      "peso": "76",
+      "sensibilidad": "3.2",
+      "imagen": "assets/img/benqzowie/benq_zowie_ec3cw_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "EC3_C",
+      "nombre": "EC3-C",
+      "marca": "Zowie",
+      "precio": "78567.30",
+      "peso": "70",
+      "sensibilidad": "3.2",
+      "imagen": "assets/img/benqzowie/benq_zowie_ec3_c_1.jpg",
+      "conexion": "Cable"
+},
+  {
+      "id": "Harpoon_RGB",
+      "nombre": "Harpoon RGB",
+      "marca": "Corsair",
+      "precio": "72189.72",
+      "peso": "99",
+      "sensibilidad": "10",
+      "imagen": "assets/img/corsair/corsair_harpoon_rgb_wireless.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Dark_Core_RGB_PRO",
+      "nombre": "Dark Core RGB PRO",
+      "marca": "Corsair",
+      "precio": "108459.99",
+      "peso": "133",
+      "sensibilidad": "18",
+      "imagen": "assets/img/corsair/corsair_dark_core_rgb_pro_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Ironclaw_RGB",
+      "nombre": "Ironclaw RGB",
+      "marca": "Corsair",
+      "precio": "69869.95",
+      "peso": "130",
+      "sensibilidad": "18",
+      "imagen": "assets/img/corsair/corsair_ironclaw_rgb_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Katar_Elite",
+      "nombre": "Katar Elite",
+      "marca": "Corsair",
+      "precio": "78040.45",
+      "peso": "69",
+      "sensibilidad": "26",
+      "imagen": "assets/img/corsair/corsair_katar_pro_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "M65_RGB_Ultra",
+      "nombre": "M65 RGB Ultra",
+      "marca": "Corsair",
+      "precio": "107759.22",
+      "peso": "110",
+      "sensibilidad": "26",
+      "imagen": "assets/img/corsair/corsair_m65_rgb_ultra_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Sabre_Pro_Champion_Series",
+      "nombre": "Sabre Pro Champion Series",
+      "marca": "Corsair",
+      "precio": "157009.38",
+      "peso": "79",
+      "sensibilidad": "26",
+      "imagen": "assets/img/corsair/corsair_sabre_rgb_pro_wireless_champion_series_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "DeathAdder_V3_Pro",
+      "nombre": "DeathAdder V3 Pro",
+      "marca": "Razer",
+      "precio": "200339.15",
+      "peso": "63",
+      "sensibilidad": "30",
+      "imagen": "assets/img/razer/razer_deathadder_v3_pro_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "DeathAdder_2_X_Hyperspeed",
+      "nombre": "DeathAdder 2 X Hyperspeed",
+      "marca": "Razer",
+      "precio": "152509.99",
+      "peso": "86",
+      "sensibilidad": "14",
+      "imagen": "assets/img/razer/razer_deathadder_v2_x_hyperspeed_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Basilisk_V3_Pro",
+      "nombre": "Basilisk V3 Pro",
+      "marca": "Razer",
+      "precio": "123418.20",
+      "peso": "122",
+      "sensibilidad": "30",
+      "imagen": "assets/img/razer/razer_basilisk_v3_pro_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Basilisk_3_Pro_X_Hyperspeed",
+      "nombre": "Basilisk 3 Pro X Hyperspeed",
+      "marca": "Razer",
+      "precio": "164146.99",
+      "peso": "110",
+      "sensibilidad": "18",
+      "imagen": "assets/img/razer/razer_basilisk_v3_pro_x_hyperspeed_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Viper_V2_Pro",
+      "nombre": "Viper V2 Pro",
+      "marca": "Razer",
+      "precio": "108827.40",
+      "peso": "69",
+      "sensibilidad": "30",
+      "imagen": "assets/img/razer/razer_viper_v2_pro_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Viper_Ultimate_Cyberpunk",
+      "nombre": "Viper Ultimate Cyberpunk",
+      "marca": "Razer",
+      "precio": "82502.35",
+      "peso": "74",
+      "sensibilidad": "20",
+      "imagen": "assets/img/razer/razer_viper_ultimate_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Aerox_9_Wireless",
+      "nombre": "Aerox 9 Wireless",
+      "marca": "SteelSeries",
+      "precio": "251220.95",
+      "peso": "89",
+      "sensibilidad": "18",
+      "imagen": "assets/img/steelseries/steelseries_aerox_9_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Aerox_5",
+      "nombre": "Aerox 5",
+      "marca": "SteelSeries",
+      "precio": "216055.99",
+      "peso": "74",
+      "sensibilidad": "18",
+      "imagen": "assets/img/steelseries/steelseries_aerox_5_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Aerox_3_ONYX_Edition",
+      "nombre": "Aerox 3 ONYX Edition",
+      "marca": "SteelSeries",
+      "precio": "186140.76",
+      "peso": "66",
+      "sensibilidad": "18",
+      "imagen": "assets/img/steelseries/steelseries_aerox_3_wireless_onyx_2022_edition_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Prime_Plus_Edition",
+      "nombre": "Prime Plus Edition",
+      "marca": "SteelSeries",
+      "precio": "105980.85",
+      "peso": "80",
+      "sensibilidad": "18",
+      "imagen": "assets/img/steelseries/steelseries_prime_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Rival_650",
+      "nombre": "Rival 650",
+      "marca": "SteelSeries",
+      "precio": "94530.99",
+      "peso": "121",
+      "sensibilidad": "12",
+      "imagen": "assets/img/steelseries/steelseries_rival_650_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Rival_3_Plus_Edition",
+      "nombre": "Rival 3 Plus Edition",
+      "marca": "SteelSeries",
+      "precio": "86649.55",
+      "peso": "77",
+      "sensibilidad": "18",
+      "imagen": "assets/img/steelseries/steelseries_rival_3_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Gladius_III_AimPoint",
+      "nombre": "Gladius III AimPoint",
+      "marca": "ROG",
+      "precio": "142750.75",
+      "peso": "79",
+      "sensibilidad": "36",
+      "imagen": "assets/img/asusrog/asus_rog_gladius_iii_wireless_aimpoint_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Gladius_II",
+      "nombre": "Gladius II",
+      "marca": "ROG",
+      "precio": "103669.32",
+      "peso": "93",
+      "sensibilidad": "16",
+      "imagen": "assets/img/asusrog/asus_rog_gladius_ii_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Strix_Carry",
+      "nombre": "Strix Carry",
+      "marca": "ROG",
+      "precio": "68800.15",
+      "peso": "90",
+      "sensibilidad": "7.2",
+      "imagen": "assets/img/asusrog/asus_rog_strix_carry_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Pugio_II",
+      "nombre": "Pugio II",
+      "marca": "ROG",
+      "precio": "82530.99",
+      "peso": "100",
+      "sensibilidad": "16",
+      "imagen": "assets/img/asusrog/asus_rog_pugio_ii_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Keris_EVA_Edition",
+      "nombre": "Keris EVA Edition",
+      "marca": "ROG",
+      "precio": "84900.35",
+      "peso": "79",
+      "sensibilidad": "16",
+      "imagen": "assets/img/asusrog/asus_rog_keris_eva_edition_wireless_1.jpg",
+      "conexion": "Wireless"
+},
+  {
+      "id": "Chakram_X",
+      "nombre": "Chakram X",
+      "marca": "ROG",
+      "precio": "98399.65",
+      "peso": "127",
+      "sensibilidad": "36",
+      "imagen": "assets/img/asusrog/asus_rog_chakramx_1.jpg",
+      "conexion": "Wireless"
+}
+]

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopTech - Making Pro Players</title>
+    <link rel="icon" type="image/png" href="assets/img/ttechico.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="productos-filtro d-flex flex-column justify-content-between">
+            <div class="filtro-contenedor">
+                <div class="nav">
+                    <ul>
+                        <li class="row col-12 m-auto p-0">
+                            <a class="menu-boton carro-compra active3 col-12 justify-content-between" href="#modal">
+                                <i class="fa-solid fa-cart-shopping fa-x5"></i> Carrito</a>
+                        </li>
+                        <hr />
+
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <section class="carrito-contenedor">
+            <div class="row col-12 m-auto p-0 align-items-center">
+                <h4 class="col-11 mb-2 mt-1 carrito-titulo-compras">CARRITO DE COMPRAS</h4>
+                <a class="menu-boton carro-volver col-1 p-0" href="./index.html">
+                    <i class="fa-solid fa-circle-chevron-left"></i></a>
+            </div>
+            <hr />
+            <p id="carrito-vacio" class="carrito-vacio"><i class="fa-sharp fa-solid fa-circle-xmark"></i> No tenés ningun producto en el carro de compras.</p>
+            <div id="carrito-productos" class="carrito-productos row oculto">
+                <div class="carrito-producto col-12">
+                    <!-- SE COMPLETA CON EL JS-->
+                </div>
+            </div>
+            <div id="carrito-acciones" class="carrito-acciones row oculto">
+                <hr class="pb-0 mb-0 mt-3 col-12" style="width: 100%" />
+                <div class="carrito-acciones-izquierda col-6 p-0">
+                    <div class="carrito-acciones-total pl-0 py-3">
+                        <h3>Total:</h3>
+                        <h3 id="total"><b></b></h3>
+                    </div>
+                </div>
+                <div class="carrito-acciones-derecha col-4 p-0">
+                    <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar col-4">Vaciar carrito</button>
+                    <button id="carrito-acciones-comprar" class="carrito-acciones-comprar col-4">Comprar</button>
+                </div>
+            </div>
+            <p id="carrito-comprado" class="carrito-comprado oculto"><i class="fa-solid fa-circle-check"></i> Usted a realizado la compra, en breve nos estaremos contactando con usted para entregarle el producto.</p>
+        </section>
+    </div>
+    <!-- scripts -->
+    <script src="assets/js/carrito.js" async></script>
+</body>
+
+</html>

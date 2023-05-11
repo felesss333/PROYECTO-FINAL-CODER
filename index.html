@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopTech - Making Pro Players</title>
+    <link rel="icon" type="image/png" href="assets/img/ttechico.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+    <section id="inicio" class="container-head">
+        <div class="navbar">
+            <div class="marca-logo d-inline align-middle"></div>
+            <div class="ml-auto align-middle">
+                <h3 class="nombre-marca-1 d-inline">Top</h3>
+                <h3 class="nombre-marca-2 d-inline">Tech</h3>
+            </div>
+            <ul class="navbar-links justify-content-center mx-auto align-middle">
+                <li><a class="links active" href="#inicio">INICIO</a></li>
+                <li><a class="links" href="#productos">NUESTROS PRODUCTOS</a></li>
+                <li><a class="links" href="#sobrenosotros">SOBRE NOSOTROS</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="marcas">
+        <div class="listamarcas">
+        </div>
+    </section>
+
+    <section class="slider-body">
+        <div class="row">
+            <div class="slider-container">
+                <div class="slider">
+                    <!-- CONTENIDO SLIDER -->
+                </div>
+                <button class="slider-arrow slider-arrow-prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-arrow slider-arrow-next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="productos" class="container-body-items">
+        <div class="section-titulo">
+            <h1>Nuestros Productos</h1>
+            <p>La lista de productos que verás en esta sección son de primera lìnea e importados por nuestra empresa. <br />Todos poseen sus garantias originales y certificados de fábrica. Los valores de cada producto están sujetos al cambio monetario.</p>
+        </div>
+        <div class="wrapper">
+            <aside class="productos-filtro d-flex flex-column justify-content-between">
+                <div class="filtro-contenedor">
+                    <h4>Filtro de productos</h4>
+                    <hr />
+                    <div class="nav">
+                        <ul>
+                            <li class="col-12 p-0">
+                                <button id="categoria-todos" class="menu-boton filtro-categoria active2">- Todos</button>
+                            </li>
+                            <p style="font-style: italic">Filtro por marcas:</p>
+                            <li class="col-12 p-0">
+                                <button id="categoria-corsair" class="menu-boton filtro-categoria">- Corsair</button>
+                            </li>
+                            <li class="col-12 p-0">
+                                <button id="categoria-logitech-g" class="menu-boton filtro-categoria">- Logitech G</button>
+                            </li>
+                            <li class="col-12 p-0">
+                                <button id="categoria-razer" class="menu-boton filtro-categoria">- Razer</button>
+                            </li>
+                            <li class="col-12 p-0">
+                                <button id="categoria-rog" class="menu-boton filtro-categoria">- ROG</button>
+                            </li>
+                            <li class="col-12 p-0">
+                                <button id="categoria-steelseries" class="menu-boton filtro-categoria">- SteelSeries</button>
+                            </li>
+                            <li class="col-12 p-0">
+                                <button id="categoria-zowie" class="menu-boton filtro-categoria">- Zowie</button>
+                            </li>
+                            <hr />
+                            <p style="font-style: italic">Filtro por característica:</p>
+                            <li class="col-12 p-0">
+                                <button id="categoria-precio" class="menu-boton filtro-categoria"><i class="fa-regular fa-circle-dollar"></i> Precio</button>
+                            </li>
+                            <li class="col-12 p-0">
+                                <button id="categoria-sensibilidad" class="menu-boton filtro-categoria"><i class="fa-regular fa-crosshairs"></i> Sensibilidad</button>
+                            </li>
+                            <li class="col-12 p-0">
+                                <button id="categoria-peso" class="menu-boton filtro-categoria"><i class="fa-regular fa-weight-hanging"></i> Peso</button>
+                            </li>
+                            <li class="col-12 p-0">
+                                <button id="categoria-conexion" class="menu-boton filtro-categoria"><i class="fa-brands fa-usb"></i> Conexión</button>
+                            </li>
+                            <hr />
+                            <div class="row col-12 m-auto p-0 align-items-center">
+                                <div class="col-9 p-0 align-items-center">
+                                    <a class="menu-boton carro-compra" href="./carrito.html"><i class="fa-solid fa-cart-shopping fa-x5"></i> Carrito</a>
+                                </div>
+                                <div class="col-2 p-0 align-items-center">
+                                    <span id="numero-cantidad" class="contador">0</span>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+
+            <main>
+                <!--<div class="row col-12 px-5 mx-auto align-items-center text-center">
+                    <h3 class="titulo-principal col-12">Todos los productos</h3>
+                    <hr/>
+                </div>-->
+
+                <section id="productos-contenedor" class="producto-contenedor">
+
+                    <!--CARGA DE PRODUCTOS-->
+                </section>
+            </main>
+        </div>
+    </section>
+
+    <!-- Modal (button is carrito)-->
+    <dialog class="modal-carrito">
+        <div class="modal-carrito-header">
+            <button class="boton-close-carrito">&times;</button>
+            <h5>carrito</h5>
+        </div>
+        <ul class="modal-carrito-items">
+
+        </ul>
+        <button class="carrito-item-total">
+            <p id="checkoutTitle">Checkout</p>
+            <div class="checkout-price">
+                <p id="totalPrice"></p>
+            </div>
+        </button>
+    </dialog>
+    <!-- INICIO MODAL -->
+    <dialog class="modal-carrito-empty">
+        <div class="modal-carrito-header">
+            <button class="boton-close-carrito">&times;</button>
+            <h5>Compra</h5>
+            <p>El carrito está vacio.</p>
+        </div>
+    </dialog>
+    <!-- FIN MODAL-->
+
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="sobrenosotros" class="container-body-nosotros">
+        <div class="nosotros-head">
+            <h1>SOBRE TOP TECH</h1>
+        </div>
+        <div class="nosotros-body">
+            <div class="nosotros-section-title">
+                <h1>NUESTRA</h1>
+                <h1 id="historia">HISTORIA</h1>
+            </div>
+            <div class="nosotros-section-body">
+                <p>Somos importadores officiales de productos de calidad hace ya más de 20 años en la Argentina. A pesar de los años y las complicaciones para poder hacer importanciones, siempre logramos mantenernos y conseguir los mejores productos al mejor precio. Por eso es que nuestro prestigio sigue intacto dentro del mercado de la tecnología. Desde siempre nos hemos enfocado en los jugadores profecionales de E-sports analizando los perifericos que los mantienen en la cima.
+                </p>
+
+                <p>Hace ya unos años venimos centrandonos en lo que son los mouses/mices de los profesionales top dentro de los juegos shooters. Principalmente nos enfocamos en el CS:GO (Counter Strike: Global Offensive) y Valorant. Concideramos que estos juegos son los que ponen a prueba el màximo rendimiento de los productos que importamos. Dentro de las marcas con las que trabajamos se encuentran: Logitech, Benq, Razer, Corsair, SteelSeries entre otras. Los enfoques y detalles que tomamos se centran constantemente en los tops de los Majors de CSGO y de Valorant. Hemos promocionado equipos E-sport nacionales para proveerles los mejores productos de alta competencia.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="container-foot">
+        <footer>
+            <div class="footer-social-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <ul class="footer-links">
+                <li><a href="#home">INICIO</a></li>
+                <li><a href="#products">NUESTROS PRODUCTOS</a></li>
+                <li><a href="#nosotros">SOBRE NOSOTROS</a></li>
+            </ul>
+            <p>© 2023 Top Tech. Todos los derechos reservados.
+            </p>
+
+        </footer>
+    </div>
+    <!-- scripts -->
+    <script src="assets/js/navbar.js"></script>
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
