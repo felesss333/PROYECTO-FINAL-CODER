@@ -4,6 +4,14 @@
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
+
+
+chart colors:
+rgb(0, 148, 255)
+rgb(136, 127, 243)
+rgb(195, 100, 213)
+rgb(231, 69, 168)
+rgb(245, 48, 115)
 */
 
 
@@ -17,6 +25,7 @@ font-family: 'Roboto Condensed', sans-serif;
     --clr-black: #000000;
     --clr-white: #f5f5f5;
     --clr-medium-gray: #d3d3d3;
+    --clr-backgound-cyan: #5c5c5c;
 }
 
 html,
@@ -26,6 +35,7 @@ body {
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
+
 }
 
 .container-head {
@@ -145,21 +155,24 @@ a:hover {
 }
 
 .slider-body {
-    position: relative;
+    position: block;
+    height: 100vh;
 }
 
 .slider-container {
-    position: relative;
-    height: calc(100vh - 200px);
+    position: block;
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 .slider {
-    position: relative;
+    position: block;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
+
 
 .slide-text {
     height: 100px;
@@ -206,14 +219,8 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
+    max-height: 100vh;
 
-.tagline {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .slick-dots {
@@ -233,22 +240,214 @@ a:hover {
     opacity: 0.5 !important;
     color: #fff !important;
     font-size: 16px !important;
-    /* Cambia el valor a lo que desees */
 }
 
 .slick-dots li.slick-active button:before {
     font-size: 16px !important;
-    /* Cambia el valor a lo que desees */
     color: #27a4ff !important;
     opacity: 1 !important;
 }
 
 /* FIN SLIDER */
 
+
+/* INICIO MARCAS*/
+
+.containermarcas {
+    position: relative;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+    background-color: var(--clr-main);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    margin: 0rem auto;
+    padding-bottom: 3rem;
+}
+
+.listamarcas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 0rem;
+}
+
+
+.listamarcas img {
+    max-width: 100%;
+    height: 30px;
+}
+
+
+
+/*SECCION ESTADISTICAS*/
+.container-info {
+    background-color: var(--clr-light-cyan);
+    padding: 0.5rem 0rem;
+    max-height: 1900px;
+    overflow: hidden;
+    transition-property: max-height;
+    transition-duration: 3s;
+}
+
+.cerrar {
+    padding: 0.5rem 0rem;
+    max-height: 0;
+    overflow: hidden;
+    transition-duration: 1.5s;
+}
+
+.estadisticas {
+    width: auto;
+    background-color: var(--clr-light-cyan);
+    padding: .2rem 2rem 1rem 1.3rem;
+    color: var(--clr-white);
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    cursor: pointer;
+}
+
+.estadisticasabrir {
+    padding: .2rem .7rem;
+    color: var(--clr-white);
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition-duration: 1s;
+}
+
+.marcas-lideres {
+    color: var(--clr-white);
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+/*CHARTPIE DONUT APEXCHART*/
+.apexcharts-pie-series path:hover {
+    cursor: pointer !important;
+}
+
+.legend {
+    margin-top: 1rem !important;
+}
+
+.legend-item span {
+    padding-right: 10px;
+    color: white;
+}
+
+.legend-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.legend-item label {
+    color: white;
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 30px;
+    margin-right: 15px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+label:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+label:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 6px;
+    top: 45%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 6px;
+    height: 12px;
+    border: solid #FFF;
+    border-width: 0 3px 3px 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.logitech-checkbox + .logitech-label:before {
+    background-color: rgb(0, 148, 255);
+    border-color: rgb(0, 148, 255);
+}
+
+.logitech-checkbox:checked + .logitech-label:after {
+    opacity: 1;
+}
+
+.zowie-checkbox + .zowie-label:before {
+    background-color: rgb(220, 4, 65);
+    border-color: rgb(220, 4, 65);
+    opacity: 1;
+}
+
+.zowie-checkbox:checked + .zowie-label:after {
+    opacity: 1;
+}
+
+.razer-checkbox + .razer-label:before {
+    background-color: rgb(50, 211, 44);
+    border-color: rgb(50, 211, 44);
+}
+
+.razer-checkbox:checked + .razer-label:after {
+    opacity: 1;
+}
+
+.vaxee-checkbox + .vaxee-label:before {
+    background-color: rgb(255, 150, 26);
+    border-color: rgb(255, 150, 26);
+}
+
+.vaxee-checkbox:checked + .vaxee-label:after {
+    opacity: 1;
+}
+
+
+
+
+
+
 /* INICIO PRODUCTOS */
 .container-body-items {
     position: relative;
-    margin-top: 305px;
 }
 
 .wrapper {
@@ -404,7 +603,7 @@ a:hover {
     grid-template-columns: repeat(4, 1fr);
     padding: 0rem 0rem 0rem 3rem;
     gap: 2.5rem 2.5rem;
-    border-left: 1px solid var(--clr-light-gray);
+    border-left: 1px solid rgba(123, 123, 123, 0.25);
 }
 
 .producto {

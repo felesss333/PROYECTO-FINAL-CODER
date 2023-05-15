@@ -14,6 +14,13 @@ $(document).ready(function () {
         const sliderContainer = $('<div>').addClass('slider-container');
         const brandTagline = $('<div>').addClass('slogan');
         const brandItemPic = $('<div>').addClass('brand-item-pic').css('background-image', 'url(' + slideImgs[i] + ')');
+
+        // Agregando el fondo negro con opacidad
+        brandItemPic.css({
+            'background-color': 'rgba(0, 0, 0, 0.4)',
+            'background-blend-mode': 'multiply'
+        });
+
         const tagline = $('<div>').addClass('tagline');
         const tagline1 = $('<h1>').addClass('slogan1').text('Be Pround,');
         const tagline2 = $('<h1>').addClass('slogan2').text('Become a Pro Player.');

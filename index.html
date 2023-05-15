@@ -16,6 +16,10 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+
+
 </head>
 
 <body>
@@ -35,11 +39,6 @@
         </div>
     </section>
 
-    <section id="marcas">
-        <div class="listamarcas">
-        </div>
-    </section>
-
     <section class="slider-body">
         <div class="row">
             <div class="slider-container">
@@ -51,6 +50,59 @@
             </div>
         </div>
     </section>
+
+
+    <div class="containermarcas col-12 px-0 d-flex align-items-center">
+        <div class="row col-12 listamarcas d-flex justify-content-center">
+            <img class="col-auto mx-2" src="assets/img/brands/corsairbrand.png" alt="Imagen 1">
+            <img class="col-auto mx-2" src="assets/img/brands/logitechgbrand.png" alt="Imagen 2">
+            <img class="col-auto mx-2" src="assets/img/brands/razerband.png" alt="Imagen 3">
+            <img class="col-auto mx-2" src="assets/img/brands/asusrogbrand.png" alt="Imagen 4">
+            <img class="col-auto mx-2" src="assets/img/brands/steelseriesbrand.png" alt="Imagen 5">
+            <img class="col-auto mx-2" src="assets/img/brands/vaxeebrand.png" alt="Imagen 6">
+            <img class="col-auto mx-2" src="assets/img/brands/benqzowiebrand.png" alt="Imagen 7">
+        </div>
+    </div>
+
+    <section class="container-info col-12 px-0 d-flex align-items-center cerrar">
+        <!-- aqui pondré otros elementos que queden a la izquierda del donut-->
+        <div class="chart-container row m-auto flex-column align-items-center">
+            <div id="legend" class="d-flex flex-wrap justify-content-center align-items-center">
+                <h4 class="marcas-lideres">MARCAS LÍDERES</h4>
+                <div id="chart" class="col-12 d-flex align-items-center justify-content-center">
+                </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center mb-4">
+                <div id="legend" class="legend d-flex flex-wrap justify-content-center align-items-center">
+                    <div class="legend-item">
+                        <input type="checkbox" id="logitech-checkbox" class="logitech-checkbox" checked>
+                        <label for="logitech-checkbox" class="logitech-label">Logitech G</label>
+                    </div>
+                    <div class="legend-item">
+                        <input type="checkbox" id="zowie-checkbox" class="zowie-checkbox" checked>
+                        <label for="zowie-checkbox" class="zowie-label">Zowie</label>
+                    </div>
+                    <div class="legend-item">
+                        <input type="checkbox" id="razer-checkbox" class="razer-checkbox" checked>
+                        <label for="razer-checkbox" class="razer-label">Razer</label>
+                    </div>
+                    <div class="legend-item">
+                        <input type="checkbox" id="vaxee-checkbox" class="vaxee-checkbox" checked>
+                        <label for="vaxee-checkbox" class="vaxee-label">Vaxee</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="assets/js/michart.js"></script>
+    </section>
+    <div class="col-12 d-flex justify-content-center">
+        <div class="estadisticas d-flex justify-content-center" onclick="toggleContainer()"><i class="estadisticasabrir fa-regular fa-chevron-down" id="icono"></i> ESTADÍSTICAS</div>
+    </div>
+    <!-- <div class="chart-container2 row m-auto flex-column align-items-center">
+            <div id="newchart"></div>
+          </div>
+     <script src="assets/js/michart2.js"></script>-->
+
 
     <section id="productos" class="container-body-items">
         <div class="section-titulo">
@@ -84,6 +136,9 @@
                                 <button id="categoria-steelseries" class="menu-boton filtro-categoria">- SteelSeries</button>
                             </li>
                             <li class="col-12 p-0">
+                                <button id="categoria-vaxee" class="menu-boton filtro-categoria">- Vaxee</button>
+                            </li>
+                            <li class="col-12 p-0">
                                 <button id="categoria-zowie" class="menu-boton filtro-categoria">- Zowie</button>
                             </li>
                             <hr />
@@ -115,11 +170,6 @@
             </aside>
 
             <main>
-                <!--<div class="row col-12 px-5 mx-auto align-items-center text-center">
-                    <h3 class="titulo-principal col-12">Todos los productos</h3>
-                    <hr/>
-                </div>-->
-
                 <section id="productos-contenedor" class="producto-contenedor">
 
                     <!--CARGA DE PRODUCTOS-->
@@ -128,31 +178,7 @@
         </div>
     </section>
 
-    <!-- Modal (button is carrito)-->
-    <dialog class="modal-carrito">
-        <div class="modal-carrito-header">
-            <button class="boton-close-carrito">&times;</button>
-            <h5>carrito</h5>
-        </div>
-        <ul class="modal-carrito-items">
 
-        </ul>
-        <button class="carrito-item-total">
-            <p id="checkoutTitle">Checkout</p>
-            <div class="checkout-price">
-                <p id="totalPrice"></p>
-            </div>
-        </button>
-    </dialog>
-    <!-- INICIO MODAL -->
-    <dialog class="modal-carrito-empty">
-        <div class="modal-carrito-header">
-            <button class="boton-close-carrito">&times;</button>
-            <h5>Compra</h5>
-            <p>El carrito está vacio.</p>
-        </div>
-    </dialog>
-    <!-- FIN MODAL-->
 
 
     <!-- SOBRE NOSOTROS -->
@@ -192,6 +218,7 @@
         </footer>
     </div>
     <!-- scripts -->
+    <!-- IMPORTANDO LIBRERIA DE CHART.S-->
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/app.js"></script>

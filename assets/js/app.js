@@ -79,8 +79,6 @@ function cargarProductos(productosElegidos) {
     actualizarBotonesAgregar();
 }
 
-//
-
 botonesCategorias.forEach(boton => {
     boton.addEventListener("click", (e) => {
         botonesCategorias.forEach(boton => boton.classList.remove("active2"));
@@ -89,7 +87,7 @@ botonesCategorias.forEach(boton => {
         const categoriaSeleccionada = e.currentTarget.id.split("-")[1];
         let productosFiltrados = [];
 
-        if (categoriaSeleccionada === "todos" || categoriaSeleccionada === "corsair" || categoriaSeleccionada === "logitech" || categoriaSeleccionada === "razer" || categoriaSeleccionada === "rog" || categoriaSeleccionada === "steelseries" || categoriaSeleccionada === "zowie") {
+        if (categoriaSeleccionada === "todos" || categoriaSeleccionada === "corsair" || categoriaSeleccionada === "logitech" || categoriaSeleccionada === "razer" || categoriaSeleccionada === "rog" || categoriaSeleccionada === "steelseries" || categoriaSeleccionada === "vaxee" || categoriaSeleccionada === "zowie") {
             // FILTRO POR MARCA CON PRIORIDAD ALFABETICA EN MARCA Y LUEGO NOMBRE
             const marcaSeleccionada = categoriaSeleccionada === "todos" ? "" : categoriaSeleccionada;
             productosFiltrados = productos.filter(producto => producto.marca.toLowerCase().includes(marcaSeleccionada.toLowerCase()));

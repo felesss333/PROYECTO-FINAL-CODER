@@ -358,5 +358,45 @@
       "sensibilidad": "36",
       "imagen": "assets/img/asusrog/asus_rog_chakramx_1.jpg",
       "conexion": "Wireless"
+},
+{
+  "id": "XE_O_Wireless",
+  "nombre": "XE O Wireless",
+  "marca": "Vaxee",
+  "precio": "119492.87",
+  "peso": "76",
+  "sensibilidad": "32",
+  "imagen": "assets/img/vaxee/vaxee_xe_wireless_1.jpg",
+  "conexion": "Wireless"
+},
+{
+  "id": "XE_B_Wired",
+  "nombre": "XE B Wired",
+  "marca": "Vaxee",
+  "precio": "104655.32",
+  "peso": "68",
+  "sensibilidad": "32",
+  "imagen": "assets/img/vaxee/vaxee_xe_blue_wired_1.jpg",
+  "conexion": "Cable"
+},
+{
+  "id": "Outset_AX_Mate",
+  "nombre": "Outset AX Mate",
+  "marca": "Vaxee",
+  "precio": "101322.69",
+  "peso": "76",
+  "sensibilidad": "32",
+  "imagen": "assets/img/vaxee/vaxee_outset_ax_mate_wired_1.jpg",
+  "conexion": "Cable"
+},
+{
+  "id": "Zygen_NO_01_Mate",
+  "nombre": "Zygen NO-01 Mate",
+  "marca": "Vaxee",
+  "precio": "99803.55",
+  "peso": "78",
+  "sensibilidad": "32",
+  "imagen": "assets/img/vaxee/vaxee_zygen_np_01_mate_wired_1.jpg",
+  "conexion": "Cable"
 }
 ]

@@ -61,15 +61,12 @@ function cargarProductosCarrito() {
 //VA A VARGAR TODO LO QUE ESTÉ EN EL LS//
 cargarProductosCarrito();
 
-
-
 function actualizarBotonesEliminar() {
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 
     botonesEliminar.forEach(boton => {
         boton.addEventListener("click", eliminarDelCarrito);
     });
-
 }
 
 function eliminarDelCarrito(e) {
@@ -80,7 +77,6 @@ function eliminarDelCarrito(e) {
     cargarProductosCarrito();
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito);
@@ -111,5 +107,4 @@ function comprarCarrito() {
     contenedorCarritoProductos.classList.add("oculto");
     contenedorCarritoAcciones.classList.add("oculto");
     contenedorCarritoComprado.classList.remove("oculto");
-
 }
