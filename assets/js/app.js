@@ -1,26 +1,42 @@
 // DECLARANDO VARIABLE GLOBAL VACIA DONDE CARGA EL LOS DATOS DEL JSON //
 let productos = [];
 
-//USO DE ASYNC Y AWAIT - FETCH CATCH FINALLY Y THEN PARA OBTENER LOS DATOS DEL JSON Y ASIGNARLOS A LA VARIABLE "PRODUCTOS" //
+// Declaración de una función asincrónica llamada obtenerProductos
 async function obtenerProductos() {
-    const productosJSON = await fetch('/assets/js/productos.json');
-    // CONST DATA = AWAIT TRANSFORMA LA RESPUESTA DEL JSON QUE DIO EL METODO FETCH PARA ALMACENARLO EN LA VARIABLE "DATA" //
-    const data = await productosJSON.json();
-    // PRODUCTOS = DATA, ASIGNA EL ARRAY DEL JSON A A PRODUCTOS"
-    productos = data;
+  try {
+    // Verifica si la función fetch está definida en el entorno
+    if (typeof fetch !== 'undefined') {
+      // Realiza una solicitud fetch para obtener el archivo JSON
+      const productosJSON = await fetch('/assets/js/productos.json');
+      // Convierte la respuesta en formato JSON en un objeto JavaScript
+      const data = await productosJSON.json();
+      // Asigna los datos obtenidos al arreglo de productos
+      productos = data;
+    } else {
+      // Lanza un error si la función fetch no está disponible en el entorno
+      throw new Error('La función fetch no está disponible en este entorno.');
+    }
+  } catch (error) {
+    // Captura y muestra cualquier error ocurrido durante la obtención de los productos
+    console.error('Error al obtener los productos:', error);
+  } finally {
+    // Muestra un mensaje indicando que la función obtenerProductos ha finalizado
+    console.log('La función obtenerProductos ha finalizado');
+  }
 }
 
-// LLAMA A LA FUNCION ESPERANDO QUE SE COMPLETE EXITOSAMENTE
+// Llamada a la función obtenerProductos esperando que se complete exitosamente
 obtenerProductos().then(() => {
-    console.log(productos);
-    //SI, NO SE CUMPLE, ENTONCES EL CATCH ERROR NOS DARÁ EL MENSAJE DEL ERROR DE LA CARGA//
-  }).catch(error => {
-    console.error('ERROR AL CARGAR EL ARCHIVO JSON POR LO SIGUIENTE:', error);
-    // DESPUES DE EJECUTAR EL BLOQUE, MEDIANTE FINALLY MOSTRAMOS POR CONSOLA SI SE HA CUMPLIDO LA CARGA//
-  }).finally(() => {
-    console.log('SE COMPLETÓ LA CARGA DE LOS OBJETOS DENTRO DEL ARRAY');
-  });
-  
+  // Muestra los productos obtenidos en la consola
+  console.log(productos);
+}).catch(error => {
+  // Captura y muestra cualquier error ocurrido durante la carga del archivo JSON
+  console.error('ERROR AL CARGAR EL ARCHIVO JSON:', error);
+}).finally(() => {
+  // Muestra un mensaje indicando que la carga de los objetos dentro del array se ha completado
+  console.log('SE COMPLETÓ LA CARGA DE LOS OBJETOS DENTRO DEL ARRAY');
+});
+
 
 const contenedorProductos = document.querySelector("#productos-contenedor");
 const botonesCategorias = document.querySelectorAll(".filtro-categoria");
