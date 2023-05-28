@@ -9,17 +9,13 @@
     <link rel="icon" type="image/png" href="assets/img/ttechico.png">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
-
-
+    <script src="https://kit.fontawesome.com/6a78aa47e6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -64,44 +60,53 @@
         </div>
     </div>
 
-    <section class="container-info col-12 px-0 d-flex align-items-center cerrar">
-        <!-- aqui pondré otros elementos que queden a la izquierda del donut-->
-        <div class="chart-container row m-auto flex-column align-items-center">
-            <div id="legend" class="d-flex flex-wrap justify-content-center align-items-center">
-                <h4 class="marcas-lideres">MARCAS LÍDERES</h4>
-                <div id="chart" class="col-12 d-flex align-items-center justify-content-center">
+    <section class="container-info">
+        <div class="row col-12 px-4 d-flex justify-content-center align-items-stretch">
+            <div class="col-5 d-flex flex-column align-items-center">
+                <div id="legend" class="d-flex flex-wrap justify-content-center align-items-center">
+                    <h4 class="marcas-lideres">MARCAS LÍDERES</h4>
+                    <div id="chart" class="col-12 d-flex align-items-center justify-content-center"></div>
+                </div>
+                <div class="col-12 d-flex justify-content-center mb-4">
+                    <div id="legend" class="legend d-flex flex-wrap justify-content-center align-items-center">
+                        <div class="legend-item">
+                            <input type="checkbox" id="logitech-checkbox" class="logitech-checkbox" checked>
+                            <label for="logitech-checkbox" class="logitech-label">Logitech G</label>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="zowie-checkbox" class="zowie-checkbox" checked>
+                            <label for="zowie-checkbox" class="zowie-label">Zowie</label>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="razer-checkbox" class="razer-checkbox" checked>
+                            <label for="razer-checkbox" class="razer-label">Razer</label>
+                        </div>
+                        <div class="legend-item">
+                            <input type="checkbox" id="vaxee-checkbox" class="vaxee-checkbox" checked>
+                            <label for="vaxee-checkbox" class="vaxee-label">Vaxee</label>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 d-flex justify-content-center mb-4">
-                <div id="legend" class="legend d-flex flex-wrap justify-content-center align-items-center">
-                    <div class="legend-item">
-                        <input type="checkbox" id="logitech-checkbox" class="logitech-checkbox" checked>
-                        <label for="logitech-checkbox" class="logitech-label">Logitech G</label>
-                    </div>
-                    <div class="legend-item">
-                        <input type="checkbox" id="zowie-checkbox" class="zowie-checkbox" checked>
-                        <label for="zowie-checkbox" class="zowie-label">Zowie</label>
-                    </div>
-                    <div class="legend-item">
-                        <input type="checkbox" id="razer-checkbox" class="razer-checkbox" checked>
-                        <label for="razer-checkbox" class="razer-label">Razer</label>
-                    </div>
-                    <div class="legend-item">
-                        <input type="checkbox" id="vaxee-checkbox" class="vaxee-checkbox" checked>
-                        <label for="vaxee-checkbox" class="vaxee-label">Vaxee</label>
-                    </div>
+            <div class="col-6 d-flex flex-column align-items-center">
+                <div id="legend" class="col-7 justify-content-center align-items-center pt-0">
+                    <h4 class="marcas-lideres px-4 mb-0">MOUSES MÁS USADOS POR PROPLAYERS</h4>
+                    <div id="newchart" class="col-12 d-flex align-items-center justify-content-center"></div>
+                    <script src="assets/js/michart.js"></script>
                 </div>
             </div>
-        </div>
-        <script src="assets/js/michart.js"></script>
+            <script src="assets/js/michart2.js"></script>
+        </div>        
     </section>
+    
+    
+    
+    
+    
     <div class="col-12 d-flex justify-content-center">
-        <div class="estadisticas d-flex justify-content-center" onclick="toggleContainer()"><i class="estadisticasabrir fa-regular fa-chevron-down" id="icono"></i> ESTADÍSTICAS</div>
+        <div class="estadisticas d-flex justify-content-center" onclick="toggleContainer()"><i class="estadisticasabrir fa-solid fa-chevron-up" id="icono"></i> ESTADÍSTICAS</div>
     </div>
-    <!-- <div class="chart-container2 row m-auto flex-column align-items-center">
-            <div id="newchart"></div>
-          </div>
-     <script src="assets/js/michart2.js"></script>-->
+    
 
 
     <section id="productos" class="container-body-items">
@@ -144,13 +149,13 @@
                             <hr />
                             <p style="font-style: italic">Filtro por característica:</p>
                             <li class="col-12 p-0">
-                                <button id="categoria-precio" class="menu-boton filtro-categoria"><i class="fa-regular fa-circle-dollar"></i> Precio</button>
+                                <button id="categoria-precio" class="menu-boton filtro-categoria"><i class="fa-solid fa-circle-dollar"></i> Precio</button>
                             </li>
                             <li class="col-12 p-0">
-                                <button id="categoria-sensibilidad" class="menu-boton filtro-categoria"><i class="fa-regular fa-crosshairs"></i> Sensibilidad</button>
+                                <button id="categoria-sensibilidad" class="menu-boton filtro-categoria"><i class="fa-solid fa-crosshairs"></i> Sensibilidad</button>
                             </li>
                             <li class="col-12 p-0">
-                                <button id="categoria-peso" class="menu-boton filtro-categoria"><i class="fa-regular fa-weight-hanging"></i> Peso</button>
+                                <button id="categoria-peso" class="menu-boton filtro-categoria"><i class="fa-solid fa-weight-hanging"></i> Peso</button>
                             </li>
                             <li class="col-12 p-0">
                                 <button id="categoria-conexion" class="menu-boton filtro-categoria"><i class="fa-brands fa-usb"></i> Conexión</button>
@@ -218,7 +223,6 @@
         </footer>
     </div>
     <!-- scripts -->
-    <!-- IMPORTANDO LIBRERIA DE CHART.S-->
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/slider.js"></script>
     <script src="assets/js/app.js"></script>

@@ -440,14 +440,67 @@ label:after {
     opacity: 1;
 }
 
-
-
-
-
-
-/* INICIO PRODUCTOS */
-.container-body-items {
+/*CHART BARS APEXCHART*/
+.arrow_box {
     position: relative;
+    background:#fff;
+    border: 2px solid #fff;
+  }
+.arrow_box:after, .arrow_box:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+ 
+.arrow_box:after {
+    border-color: rgba(85, 85, 85, 0);
+    border-right-color: #fff;
+    border-width: 10px;
+    margin-top: -10px;
+  }
+  .arrow_box:before {
+    border-color: rgba(0, 0, 0, 0);
+    border-right-color: #fff;
+    border-width: 13px;
+    margin-top: -13px;
+  }
+  
+ .apexcharts-tooltip {
+    color: #000;
+    transform: translateX(10px) translateY(10px);
+    overflow: visible !important;
+    white-space: normal !important;
+  }
+  
+  .apexcharts-bar-area:hover {
+    cursor: pointer;
+  }
+
+  .custom-tooltip {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top:-6rem;
+}
+
+.custom-tooltip span {
+    margin-bottom: 4px;
+    border-radius: 15px;
+}
+
+.custom-tooltip img {
+    width: 200px; 
+    height: 110px;
 }
 
 .wrapper {
@@ -458,6 +511,7 @@ label:after {
     padding-bottom: 3rem;
 
 }
+
 
 /*ASIDE MENU*/
 .productos-filtro {

@@ -1,43 +1,44 @@
 // DECLARANDO VARIABLE GLOBAL VACIA DONDE CARGA EL LOS DATOS DEL JSON //
 let productos = [];
 
-// Declaración de una función asincrónica llamada obtenerProductos
+// DECLARANDO LA FUNCIÓN ASINCRÓNICA OBTENERPRODUCTOS
 async function obtenerProductos() {
   try {
-    // Verifica si la función fetch está definida en el entorno
+    // VERIFICA SI FETCH ESTÁ DEFINIDA
     if (typeof fetch !== 'undefined') {
-      // Realiza una solicitud fetch para obtener el archivo JSON
-      const productosJSON = await fetch('/assets/js/productos.json');
-      // Convierte la respuesta en formato JSON en un objeto JavaScript
+      // SOLICITUD DEL FETCH PARA OBTENER EL JSON
+      const productosJSON = await fetch('/assets/json/productos.json');
+      // CONVIRTIENDO JSON EN JS
       const data = await productosJSON.json();
-      // Asigna los datos obtenidos al arreglo de productos
+      // ASIGNADNDO LOS DATOS OBTENIDOS AL ARRYA DE PRODUCTOS
       productos = data;
     } else {
-      // Lanza un error si la función fetch no está disponible en el entorno
+      // AVISO DE ERROR SI FETCH NO ESTÁ EN EL ENTORNO
       throw new Error('La función fetch no está disponible en este entorno.');
     }
   } catch (error) {
-    // Captura y muestra cualquier error ocurrido durante la obtención de los productos
+    // CAPTURA Y MUESTRA ERRORES OBTENIDOS DURANTE LA OBTENCIÓN DEL ARRAY
     console.error('Error al obtener los productos:', error);
   } finally {
-    // Muestra un mensaje indicando que la función obtenerProductos ha finalizado
+    // MENSAJE DE CARGA FINALIZADA
     console.log('La función obtenerProductos ha finalizado');
   }
 }
 
-// Llamada a la función obtenerProductos esperando que se complete exitosamente
+// LLAMANDO A OBTENERPRODUCTOS A LA ESPERA DE QUE SE COMPLETE
 obtenerProductos().then(() => {
-  // Muestra los productos obtenidos en la consola
+  // MUESTREO DE LOS PRODUCTOS DEL ARRAY EN LA CONSOLA
   console.log(productos);
 }).catch(error => {
-  // Captura y muestra cualquier error ocurrido durante la carga del archivo JSON
+  // CAPTURA Y MUESTRA ERRORES OBTENIDOS DURANTE LA OBTENCIÓN DEL ARRAY
   console.error('ERROR AL CARGAR EL ARCHIVO JSON:', error);
 }).finally(() => {
-  // Muestra un mensaje indicando que la carga de los objetos dentro del array se ha completado
+  // MENSAJE DE CONFIRMACIÓN DE CARGA DE LOS PRODUCTOS
   console.log('SE COMPLETÓ LA CARGA DE LOS OBJETOS DENTRO DEL ARRAY');
 });
 
 
+//DECLARACIONES DEL SCOPE GLOBAL
 const contenedorProductos = document.querySelector("#productos-contenedor");
 const botonesCategorias = document.querySelectorAll(".filtro-categoria");
 let botonesAgregar = document.querySelectorAll(".agregar-producto");
@@ -69,11 +70,11 @@ function cargarProductos(productosElegidos) {
       <img class="producto-imagen" src=${producto.imagen} alt=${producto.nombre}>
       <div class="mas-info row col-10 mx-auto py-2 justify-content-between">
         <div class="col-auto align-items-center">
-          <i class="fa-regular fa-crosshairs"></i>
+          <i class="fa-solid fa-crosshairs"></i>
           <span class="ml-1">${producto.sensibilidad}K</span>
         </div>
         <div class="col-auto align-items-center">
-          <i class="fa-regular fa-weight-hanging"></i>
+          <i class="fa-solid fa-weight-hanging"></i>
           <span class="ml-1">${producto.peso}gr</span>
         </div>
         <div class="col-auto align-items-center">

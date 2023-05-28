@@ -42,7 +42,7 @@ function cargarProductosCarrito() {
                 <small>Subtotal</small>
                 <p>$${Number(producto.precio * producto.cantidad).toLocaleString('es-AR', {minimumFractionDigits: 2})}</p>
                 </div>
-                <button id="${producto.id}" class="carrito-producto-eliminar col-auto"><i class="fa-solid fa-trash-xmark"></i></button>
+                <button id="${producto.id}" class="carrito-producto-eliminar col-auto"><i class="fa-solid fa-trash"></i></button>
             `;
             contenedorCarritoProductos.append(div);
         })
